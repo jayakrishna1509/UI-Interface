@@ -1,0 +1,211 @@
+<!-- UI interface in HTML Day 5 -->
+<!-- 23-08-2024 FRIDAY -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="description" content="Meme Page using HTML with Rowspan Operations on Tables">
+    <meta name="keywords" content="HTML, Rowspan, Table, Icons, Formulas, Chemical Equations">
+    <meta name="author" content="Your Name"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI Interface</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 10px;
+      }
+      h2 {
+        color: red;
+        background-color: black;
+        padding: 5px;
+        display: inline-block;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: auto;
+      }
+      td {
+        border: 1px solid #000;
+        padding: 10px;
+        text-align: center;
+      }
+      .highlight {
+        font-weight: bold;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      .formula,
+      .equation {
+        font-family: "Courier New", Courier, monospace;
+      }
+      .icon {
+        width: 50px;
+        height: 50px;
+      }
+      .social-icons img {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+      }
+      details {
+        cursor: pointer;
+        padding: 0.5em;
+        margin-bottom: 0.5em;
+        border: 1px solid #ddd;
+      }
+
+      summary {
+        position: relative;
+        padding-left: 1.5em;
+        list-style: none;
+      }
+
+      summary::before {
+        content: "▶"; /* Right-pointing arrow */
+        font-size: 0.8em;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: transform 0.3s ease;
+      }
+
+      details[open] summary::before {
+        transform: rotate(90deg); /* Rotate arrow to point down */
+      }
+
+      .panel {
+        padding: 0 18px;
+        overflow: hidden;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <center><h1>Details and Summary Tag in HTML using UI Interface</h1></center>
+
+    <!-- Accordion Section: Colspan and Rowspan Meta Tags -->
+    <details>
+      <summary>Colspan and Rowspan</summary>
+      <div class="panel">
+        <!-- Table using Rowspan -->
+        <table>
+          <tr>
+            <td class="highlight" rowspan="2">BDO TAG in TEXT:</td>
+            <td>
+              <bdo dir="rtl">Science Fiction and Horror</bdo><br />
+              <bdo dir="rtl">Mystery and Drama</bdo>
+            </td>
+          </tr>
+          <tr>
+            <td class="highlight">BDO TAG in IMAGES:</td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <a
+                href="https://en.wikipedia.org/wiki/Stranger_Things"
+                target="_blank"
+                ><img
+                  src="https://upload.wikimedia.org/wikipedia/commons/3/38/Stranger_Things_logo.png"
+                  alt="Image 1"
+                  height="70px"
+                  width="80px"
+              /></a>
+              <a
+                href="https://en.wikipedia.org/wiki/Stranger_Things_season_1"
+                target="_blank"
+                ><img
+                  src="https://image.cnnturk.com/i/cnnturk/75/1200x675/600ecfa45cf3b000d00338e1.jpg"
+                  alt="Image 2"
+                  height="70px"
+                  width="80px"
+              /></a>
+              <a
+                href="https://en.wikipedia.org/wiki/Chapter_Four:_Dear_Billy"
+                target="_blank"
+                ><img
+                  src="https://imgix.bustle.com/scary-mommy/2021/12/12/stranger-things-netflix.jpg"
+                  alt="Image 3"
+                  height="70px"
+                  width="80px"
+              /></a>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" class="highlight">Clickable Content:</td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <a
+                href="https://en.wikipedia.org/wiki/Stranger_Things"
+                target="_blank"
+                >Click Here</a
+              ><br />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" class="highlight">Formula:</td>
+          </tr>
+          <tr>
+            <td colspan="2" class="formula">
+              (a+b)<sup>2</sup> = a<sup>2</sup> + 2ab + b<sup>2</sup><br />
+              (a+b+c)<sup>3</sup> = a<sup>3</sup> + b<sup>3</sup> + c<sup
+                >3</sup
+              >
+              + 3ab(a+b+c) + 6abc
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" class="highlight">Balanced Chemical Equation:</td>
+          </tr>
+          <tr>
+            <td colspan="2" class="equation">
+              Pb(NO<sub>3</sub>)<sub>2</sub> + 2NaCl → 2NaNO<sub>3</sub> +
+              PbCl<sub>2</sub><br />
+              2H<sub>2</sub> + O<sub>2</sub> → 2H<sub>2</sub>O
+            </td>
+          </tr>
+        </table>
+      </div>
+    </details>
+
+    <!-- Accordion Section: Stranger Things Description -->
+    <details>
+      <summary>STRANGER THINGS</summary>
+      <div class="panel">
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+          <a href="https://www.facebook.com/StrangerThingsTV/"
+            ><img src="./assets/icons/facebook.svg" alt="Facebook"
+          /></a>
+          <a href="https://x.com/stranger_things?lang=en" target="_blank"
+            ><img src="./assets/icons/twitter.png" alt="Twitter"
+          /></a>
+          <a
+            href="https://www.instagram.com/strangerthingstv/?hl=en"
+            target="_blank"
+            ><img src="./assets/icons/instagram.svg" alt="Instagram"
+          /></a>
+        </div>
+
+        <!-- Stranger Things -->
+        <h2>STRANGER THINGS</h2>
+        <hr />
+        <p>
+          <em>Stranger Things</em> is an American television series created by
+          the Duffer Brothers for <b>Netflix.</b> Produced by Monkey Massacre
+          Productions and 21 Laps Entertainment, the first season was released
+          on <strong>Netflix</strong> on July 15, 2016. The second and third
+          seasons followed in October 2017 and July 2019 respectively, and the
+          fourth season was released in two parts in May and July 2022. The
+          fifth and final season of Stranger Things is expected to be released
+          in 2025. The show is known for its likeable cast of characters, plot,
+          nostalgic tones, and its clever mix of the horror, drama,
+          science-fiction, mystery, and coming-of-age genres.
+        </p>
+      </div>
+    </details>
+  </body>
+</html>

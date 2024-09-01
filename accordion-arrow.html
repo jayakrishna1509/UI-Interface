@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Accordion with Toggle Right Arrow</title>
+    <style>
+        details {
+            cursor: pointer;
+            padding: 0.5em;
+            margin-bottom: 0.5em;
+        }
+
+        summary {
+            position: relative;
+            padding-left: 1.5em;
+            list-style: none;
+        }
+
+        summary::before {
+            content: '▶'; /* Right-pointing arrow */
+            font-size: 0.8em;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: transform 0.3s ease;
+        }
+
+        details[open] summary::before {
+            transform: rotate(90deg); /* Rotate arrow to point down */
+        }
+    </style>
+</head>
+<body>
+
+    <details>
+        <summary>HTML</summary>
+        <p>Hypertext Markup Language</p>
+    </details>
+
+    <details>
+        <summary>CSS</summary>
+        <p>Cascading Style Sheets</p>
+    </details>
+
+    <details>
+        <summary>JavaScript</summary>
+        <p>Programming language for web development.</p>
+    </details>
+
+</body>
+</html>
